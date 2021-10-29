@@ -37,9 +37,9 @@ import (
 	"k8s.io/client-go/kubernetes"
 )
 
-//+kubebuilder:rbac:groups=cache.example.com,resources=memcacheds,verbs=get;list;watch;create;update;patch;delete
-//+kubebuilder:rbac:groups=cache.example.com,resources=memcacheds/status,verbs=get;update;patch
-//+kubebuilder:rbac:groups=cache.example.com,resources=memcacheds/finalizers,verbs=update
+//+kubebuilder:rbac:groups=cache.my.domain,resources=memcacheds,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=cache.my.domain,resources=memcacheds/status,verbs=get;update;patch
+//+kubebuilder:rbac:groups=cache.my.domain,resources=memcacheds/finalizers,verbs=update
 //+kubebuilder:rbac:groups=apps,resources=deployments,verbs=get;list;watch;create;update;patch;delete
 //+kubebuilder:rbac:groups=core,resources=pods,verbs=get;list;
 

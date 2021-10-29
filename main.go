@@ -17,6 +17,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"time"
 
 	"github.com/example-inc/lib-go-plugin-operator/api/cache.my.domain/v1alpha1"
@@ -33,6 +34,7 @@ import (
 )
 
 func main() {
+	fmt.Println("here")
 	ctx := context.TODO()
 
 	cfg := ctrl.GetConfigOrDie()
